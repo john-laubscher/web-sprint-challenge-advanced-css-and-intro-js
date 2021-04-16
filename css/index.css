@@ -14,7 +14,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 0;  
+border: 0
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
@@ -133,4 +133,46 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+/*Responsive styling*/
+
+@media(max-width: 500px) {
+    section.artists-container {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .artist {
+      
+        width: 100%;
+        padding-bottom: 3%;
+    }
+
+    .artist img{
+    width: 250px;
+    height:250px;
+    }
+
+    .artists .bio{
+        width: 100%;
+    }
+    
+    h1{
+        font-size: 4rem;
+    }
+
+    nav a{
+        padding: 0 3%;
+    }
+
+
+
+
+
+
+
+
 }
